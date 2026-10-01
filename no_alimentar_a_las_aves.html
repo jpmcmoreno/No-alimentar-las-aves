@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Alimentar a las Aves - Conciencia Silvestre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f4f7f4',
+                            100: '#e3ebe3',
+                            300: '#b0c5b2',
+                            600: '#52796f',
+                            800: '#354f52',
+                            900: '#2f3e46'
+                        },
+                        earth: {
+                            100: '#f7f4ef',
+                            200: '#eae3d2',
+                            500: '#8c6d58',
+                            800: '#4a382a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, rgba(47, 62, 70, 0.92) 0%, rgba(53, 79, 82, 0.85) 100%), url('https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-sage-50 text-sage-900 font-sans antialiased selection:bg-sage-600 selection:text-white flex flex-col min-h-screen">
+
+
+
+    <section id="impactos" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="font-heading text-2xl sm:text-4xl font-bold text-sage-900 mb-4">¿Por qué es perjudicial alimentar aves?</h2>
+            <p class="text-gray-600">Darles comida a las aves, en la ciudad o en el campo, les hace daño a ellas y a la naturaleza. Mira aquí por qué:</p>
+            
+        </div>
+
+        <!-- Grid de Tarjetas basada en el esquema del usuario -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="impacts-grid">
+            
+            <!-- Tarjeta 1: Pérdida de Conductas Naturales -->
+            <div class="impact-card glass-card rounded-2xl p-6 border border-sage-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-category="conducta">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Pérdida de Conductas Naturales</h3>
+                <p class="text-sm text-gray-600 mb-4">Si les damos comida fácil, olvidan cómo buscarla solas, algo que necesitan para sobrevivir.</p>
+                <ul class="space-y-2 text-sm text-sage-800 border-t border-sage-100 pt-3">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-amber-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Instinto Forrajero:</strong> Reducción de la capacidad y motivación para buscar alimento natural.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-amber-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Caza y Forrajeo:</strong> Alteración en sus rutinas de captura de insectos y dispersión.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 2: Ruptura de Cadena Trófica -->
+            <div class="impact-card glass-card rounded-2xl p-6 border border-sage-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-category="ecologia">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-bug"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Ruptura de Cadena Trófica</h3>
+                <p class="text-sm text-gray-600 mb-4">Las aves dejan de hacer su trabajo en la naturaleza, como comer insectos y mantener todo en equilibrio.</p>
+                <ul class="space-y-2 text-sm text-sage-800 border-t border-sage-100 pt-3">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-emerald-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Control de Plagas:</strong> Dejan de consumir insectos u orugas, provocando plagas en la vegetación local.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-emerald-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Polinización:</strong> Menor visita a flores y menor dispersión de semillas nativas.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 3: Dependencia Humana -->
+            <div class="impact-card glass-card rounded-2xl p-6 border border-sage-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-category="conducta">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-hand-holding-hand"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Dependencia Humana</h3>
+                <p class="text-sm text-gray-600 mb-4">Las aves se acostumbran a estar cerca de las personas y pierden el miedo que las protege.</p>
+                <ul class="space-y-2 text-sm text-sage-800 border-t border-sage-100 pt-3">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-blue-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Pérdida de Miedo:</strong> Exposición a atropellos, gatos, perros u otros depredadores urbanos.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-blue-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Agresividad:</strong> Generación de estrés y disputas agresivas por trozos de comida.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 4: Invasión de Especies Oportunistas -->
+            <div class="impact-card glass-card rounded-2xl p-6 border border-sage-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-category="ecologia">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-locust"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Especies Oportunistas</h3>
+                <p class="text-sm text-gray-600 mb-4">La comida que dejamos tirada atrae ratas, plagas y animales que transmiten enfermedades.</p>
+                <ul class="space-y-2 text-sm text-sage-800 border-t border-sage-100 pt-3">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-purple-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Aumento de Plagas:</strong> Atracción de roedores, palomas oportunistas e insectos nocivos.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-purple-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Desplazamiento:</strong> Las aves nativas frágiles son expulsadas por especies invasoras más agresivas.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 5: Desequilibrio Ecológico -->
+            <div class="impact-card glass-card rounded-2xl p-6 border border-sage-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-category="ecologia">
+                <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Desequilibrio Ecológico</h3>
+                <p class="text-sm text-gray-600 mb-4">Se juntan demasiadas aves en un mismo lugar y no alcanza lo que la naturaleza les puede dar.</p>
+                <ul class="space-y-2 text-sm text-sage-800 border-t border-sage-100 pt-3">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-teal-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Superpoblación no Sostenible:</strong> Concentraciones anormales de aves en áreas reducidas.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-teal-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Propagación de Enfermedades:</strong> Brotes infecciosos acelerados por hacinamiento en comederos.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tarjeta 6: Malnutrición -->
+            <div class="impact-card glass-card rounded-2xl p-6 border border-sage-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-category="salud">
+                <div class="w-12 h-12 rounded-xl bg-red-100 text-red-700 flex items-center justify-center text-xl font-bold mb-4">
+                    <i class="fa-solid fa-bowl-food"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Malnutrición Severa</h3>
+                <p class="text-sm text-gray-600 mb-4">La comida de las personas (pan, galletas, arroz) no tiene lo que las aves necesitan para estar sanas.</p>
+                <ul class="space-y-2 text-sm text-sage-800 border-t border-sage-100 pt-3">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-red-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Sindrome "Ala de Ángel":</strong> Deformidad en las alas por exceso de carbohidratos que impide volar.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-dot text-red-600 text-xs mt-1 mr-2"></i>
+                        <span><strong>Deficiencias Óseas:</strong> Falta de calcio y fósforo, causando huesos frágiles y deformaciones.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="quiz" class="py-16 px-4 max-w-4xl mx-auto w-full">
+        <div class="bg-sage-900 text-white rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <span class="text-sage-300 font-semibold text-xs uppercase tracking-widest">Evaluación de Conciencia</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold mt-1 mb-6">Test: ¿Qué tanto sabes sobre el impacto de alimentar aves?</h2>
+
+                <div id="quiz-container">
+                    <div id="question-block" class="space-y-6">
+                        <p id="quiz-question" class="text-lg sm:text-xl font-medium text-sage-100">Cargando pregunta...</p>
+                        <div id="quiz-options" class="grid grid-cols-1 gap-3">
+                            <!-- Las opciones se cargarán con JavaScript -->
+                        </div>
+                    </div>
+
+                    <div id="quiz-result" class="hidden text-center py-6 space-y-4">
+                        <div id="result-icon" class="text-5xl">🏆</div>
+                        <h3 id="result-title" class="text-2xl font-bold"></h3>
+                        <p id="result-desc" class="text-sage-200"></p>
+                        <button onclick="restartQuiz()" class="px-6 py-3 bg-sage-600 hover:bg-sage-600/90 text-white font-semibold rounded-xl transition-all shadow-md">
+                            Volver a intentar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-ayudar" class="py-16 px-4 max-w-7xl mx-auto w-full">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-sage-600 font-bold text-xs uppercase tracking-widest">Soluciones Sostenibles</span>
+            <h2 class="font-heading text-2xl sm:text-4xl font-bold text-sage-900 mt-1">¿Cómo ayudar verdaderamente a las aves?</h2>
+            <p class="text-gray-600 mt-2">En vez de darles comida, ayúdalas cuidando el lugar donde viven.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl border border-sage-200 shadow-sm text-center">
+                <div class="w-16 h-16 bg-sage-100 text-sage-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Siembra Plantas Nativas</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Las plantas de tu región dan los frutos, semillas e insectos que las aves de la zona necesitan.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-sage-200 shadow-sm text-center">
+                <div class="w-16 h-16 bg-sage-100 text-sage-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Bebederos Limpios</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Pon recipientes con agua fresca y limpia, y lávalos seguido para que no se enfermen.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-sage-200 shadow-sm text-center">
+                <div class="w-16 h-16 bg-sage-100 text-sage-800 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-binoculars"></i>
+                </div>
+                <h3 class="font-heading font-bold text-xl text-sage-900 mb-2">Observación Distante</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">Disfruta viendo las aves desde lejos, sin acercarte ni asustarlas.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        // Sistema de Cuestionario Interactivo
+        const quizQuestions = [
+            {
+                question: "¿Cuál es una consecuencia de alimentar aves con pan o comida procesada?",
+                options: [
+                    "Aumenta su energía para volar distancias más largas.",
+                    "Provoca malnutrición y la enfermedad 'Ala de Ángel'.",
+                    "Les ayuda a diversificar su plumaje naturalmente."
+                ],
+                correct: 1
+            },
+            {
+                question: "¿Qué ocurre con el 'instinto forrajero' si las aves se acostumbran a los humanos?",
+                options: [
+                    "Se pierde la capacidad e iniciativa para buscar alimento silvestre.",
+                    "Se vuelven mejores cazadoras de plagas nocturnas.",
+                    "Mejora la capacidad de construir nidos más fuertes."
+                ],
+                correct: 0
+            },
+            {
+                question: "¿De qué forma beneficias a las aves sin necesidad de alimentarlas directamente?",
+                options: [
+                    "Dejando migas en las plazas públicas.",
+                    "Sembrando plantas y flora nativa en tu entorno.",
+                    "Atrapándolas para darles suplementos de calcio."
+                ],
+                correct: 1
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const q = quizQuestions[currentQuestion];
+            document.getElementById('quiz-question').innerText = `${currentQuestion + 1}. ${q.question}`;
+            
+            const optionsContainer = document.getElementById('quiz-options');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 rounded-xl bg-sage-800/80 hover:bg-sage-600 border border-sage-700 transition-all text-sm font-medium text-white flex items-center justify-between";
+                btn.innerHTML = `<span>${opt}</span> <i class="fa-solid fa-chevron-right text-xs opacity-60"></i>`;
+                btn.onclick = () => selectOption(index);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function selectOption(index) {
+            if (index === quizQuestions[currentQuestion].correct) {
+                score++;
+            }
+
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuestion();
+            } else {
+                showQuizResults();
+            }
+        }
+
+        function showQuizResults() {
+            document.getElementById('question-block').classList.add('hidden');
+            const resultBlock = document.getElementById('quiz-result');
+            resultBlock.classList.remove('hidden');
+
+            const title = document.getElementById('result-title');
+            const desc = document.getElementById('result-desc');
+            const icon = document.getElementById('result-icon');
+
+            if (score === quizQuestions.length) {
+                icon.innerText = "🌿";
+                title.innerText = "¡Excelente Protector Silvestre!";
+                desc.innerText = "Has acertado todas las respuestas. Comprendes perfectamente la importancia de preservar el comportamiento natural de las aves.";
+            } else {
+                icon.innerText = "🌱";
+                title.innerText = "¡Buen Intento!";
+                desc.innerText = `Respondiste correctamente ${score} de ${quizQuestions.length}. Repasa los impactos en la página para aprender más sobre las aves.`;
+            }
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('question-block').classList.remove('hidden');
+            loadQuestion();
+        }
+
+        // Inicializar el cuestionario al cargar
+        window.onload = function() {
+            loadQuestion();
+        }
+    </script>
+</body>
+</html>
